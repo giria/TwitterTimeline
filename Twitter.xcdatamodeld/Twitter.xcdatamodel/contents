@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="GTweet" representedClassName="GTweet" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="publicationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="retweetedBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GUser" inverseName="retweets" inverseEntity="GUser" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GUser" inverseName="tweets" inverseEntity="GUser" syncable="YES"/>
+    </entity>
+    <entity name="GUser" representedClassName="GUser" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="imageLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stringName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="retweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GTweet" inverseName="retweetedBy" inverseEntity="GTweet" syncable="YES"/>
+        <relationship name="tweets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GTweet" inverseName="user" inverseEntity="GTweet" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="GTweet" positionX="-146" positionY="-115" width="128" height="118"/>
+        <element name="GUser" positionX="70" positionY="-94" width="128" height="133"/>
+    </elements>
+</model>
