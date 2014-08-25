@@ -26,6 +26,7 @@
 		8AD5FD7519ABA5580001760A /* Twitter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5FD7319ABA5580001760A /* Twitter.xcdatamodeld */; };
 		8AD5FD7819ABAA3A0001760A /* GTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5FD7719ABAA3A0001760A /* GTweet.m */; };
 		8AD5FD7B19ABAA3A0001760A /* GUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5FD7A19ABAA3A0001760A /* GUser.m */; };
+		8AD5FD7E19ABBBB60001760A /* GTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5FD7D19ABBBB60001760A /* GTimeline.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		8AD5FD7719ABAA3A0001760A /* GTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTweet.m; sourceTree = "<group>"; };
 		8AD5FD7919ABAA3A0001760A /* GUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUser.h; sourceTree = "<group>"; };
 		8AD5FD7A19ABAA3A0001760A /* GUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUser.m; sourceTree = "<group>"; };
+		8AD5FD7C19ABBBB60001760A /* GTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTimeline.h; sourceTree = "<group>"; };
+		8AD5FD7D19ABBBB60001760A /* GTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTimeline.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				8AD5FD4719ABA45B0001760A /* Main.storyboard */,
 				8AD5FD5019ABA45B0001760A /* Images.xcassets */,
 				8AD5FD3C19ABA45B0001760A /* Supporting Files */,
+				8AD5FD7C19ABBBB60001760A /* GTimeline.h */,
+				8AD5FD7D19ABBBB60001760A /* GTimeline.m */,
 			);
 			path = TwitterTimeline;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				8AD5FD7B19ABAA3A0001760A /* GUser.m in Sources */,
 				8AD5FD4219ABA45B0001760A /* main.m in Sources */,
 				8AD5FD7519ABA5580001760A /* Twitter.xcdatamodeld in Sources */,
+				8AD5FD7E19ABBBB60001760A /* GTimeline.m in Sources */,
 				8AD5FD7819ABAA3A0001760A /* GTweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
