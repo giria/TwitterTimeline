@@ -27,6 +27,7 @@
 		8AD5FD7819ABAA3A0001760A /* GTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5FD7719ABAA3A0001760A /* GTweet.m */; };
 		8AD5FD7B19ABAA3A0001760A /* GUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5FD7A19ABAA3A0001760A /* GUser.m */; };
 		8AD5FD7E19ABBBB60001760A /* GTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5FD7D19ABBBB60001760A /* GTimeline.m */; };
+		8AD5FD8119ABDDA10001760A /* GManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD5FD8019ABDDA10001760A /* GManagedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		8AD5FD7A19ABAA3A0001760A /* GUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUser.m; sourceTree = "<group>"; };
 		8AD5FD7C19ABBBB60001760A /* GTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTimeline.h; sourceTree = "<group>"; };
 		8AD5FD7D19ABBBB60001760A /* GTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTimeline.m; sourceTree = "<group>"; };
+		8AD5FD7F19ABDDA10001760A /* GManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GManagedObject.h; sourceTree = "<group>"; };
+		8AD5FD8019ABDDA10001760A /* GManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GManagedObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				8AD5FD3C19ABA45B0001760A /* Supporting Files */,
 				8AD5FD7C19ABBBB60001760A /* GTimeline.h */,
 				8AD5FD7D19ABBBB60001760A /* GTimeline.m */,
+				8AD5FD7F19ABDDA10001760A /* GManagedObject.h */,
+				8AD5FD8019ABDDA10001760A /* GManagedObject.m */,
 			);
 			path = TwitterTimeline;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AD5FD4619ABA45B0001760A /* AppDelegate.m in Sources */,
+				8AD5FD8119ABDDA10001760A /* GManagedObject.m in Sources */,
 				8AD5FD7B19ABAA3A0001760A /* GUser.m in Sources */,
 				8AD5FD4219ABA45B0001760A /* main.m in Sources */,
 				8AD5FD7519ABA5580001760A /* Twitter.xcdatamodeld in Sources */,

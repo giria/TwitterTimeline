@@ -8,14 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "GManagedObject.h"
 
 @class GTweet;
 
-@interface GUser : NSManagedObject
+@interface GUser : GManagedObject
 
 @property (nonatomic, retain) NSNumber * identifier;
 @property (nonatomic, retain) NSString * text;
-@property (nonatomic, retain) NSString * stringName;
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * screenName;
 @property (nonatomic, retain) NSString * imageLink;
 @property (nonatomic, retain) NSSet *tweets;
 @property (nonatomic, retain) NSSet *retweets;
@@ -32,5 +34,10 @@
 - (void)removeRetweetsObject:(GTweet *)value;
 - (void)addRetweets:(NSSet *)values;
 - (void)removeRetweets:(NSSet *)values;
+
++ (NSFetchRequest *)fetchRequestForTwitterUserWithIdentifier:(NSNumber *)identifier;
+
++ (id)twitterUserWithIdentifier:(NSNumber *)identifier
+         inManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end
